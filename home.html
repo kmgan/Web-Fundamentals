@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="project.css">
+    <style>
+        .container {
+            padding: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            overflow-x: auto;
+        }
+
+        .smallcontainer {
+            padding-bottom: 175px;
+            position: relative;
+            background-color: rgb(190, 224, 198);
+            border: 2px solid white;
+            overflow-x: auto;
+        }
+
+        img {
+            float: right;
+            width: auto;
+            height: 300px;
+            margin-right: 10px;
+        }
+
+        table {
+            width: 100%;
+            background-color: white;
+            overflow-x: auto;
+        }
+
+        table,
+        td,
+        th,
+        tr {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .button {
+            display: inline-block;
+            width: 25%;
+            color: white;
+            background-color: orange;
+            padding: 12px 20px;
+            font-size: 20px;
+            border: 2px solid;
+            border-color: darkorange;
+            margin-left: 20px;
+
+        }
+
+        .button:hover {
+            background-color: goldenrod;
+        }
+
+        .button:active {
+            transform: translateY(4px);
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .container,
+            .smallcontainer {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Save Our Wildlife</h1>
+    </header>
+    <div id="navbar">
+        <a class="active" href="home.html">Home</a>
+        <a href="info.html">Info</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <br>
+    <div class="container">
+        <h2>About us</h2>
+        <p>The objective of this webpage is to help create and raise awareness of people on understanding the current
+            situation of our country's wildlife. As of 2022,
+            many animals in our country are already consider endangered species and are moving towards extinction. The
+            situation is very serious and requires the attention
+            of the community. Therefore, this webpage is not only created to share info to raise awarenss, but also
+            allows the webpage visitors to donate to help Malaysia's
+            wildlife.
+        </p>
+        <div class="smallcontainer">
+            <p><img src="https://sevenpie.com/wp-content/uploads/2018/04/Untitled-design-50.jpg"
+                    alt="Malaysia wildlife">
+                Read more about what's happening to our country's wildlife, the community and also the Reforestation
+                Project here
+            </p>
+            <a href="info.html">
+                <button class="button">Click here for more info</button>
+            </a>
+        </div>
+        <br>
+        <div class="smallcontainer">
+            <p><img src="https://nhwildlifeheritage.org/wp-content/uploads/2014/07/Please-donate-ad.png"
+                    alt="Donate to wildlife">
+                Want to help out on our country's wildlife but don't know where to start? Click the link below. Help our
+                country's wildlife
+                by donating!
+            </p>
+            <a href="donate.html">
+                <button class="button">Click here to donate</button>
+            </a>
+        </div>
+        <br>
+        <div class="smallcontainer">
+            <h2>Contact Details</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Contact No.</th>
+                </tr>
+                <tr>
+                    <td>Gan Kar Ming</td>
+                    <td>21098082</td>
+                    <td>21098082@imail.sunway.edu.my</td>
+                    <td>012-2667825</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="navbarjs.js"></script>
+</body>
+
+</html>

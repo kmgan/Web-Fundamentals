@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Donate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="project.css">
+    <style>
+        img {
+            height: 280px;
+            width: 100%;
+            border: 2px solid;
+            border-color: black;
+        }
+
+        .container {
+            padding: 20px;
+            margin-left: 20%;
+            margin-right: 20%;
+            position: relative;
+        }
+
+        .col-50 {
+            width: 50%;
+            float: left;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .imagecontainer {
+            height: 350px;
+            width: 100%;
+            padding: 10px;
+            position: relative;
+        }
+
+        .button {
+            display: inline-block;
+            width: 100%;
+            color: white;
+            background-color: orange;
+            padding: 12px 20px;
+            font-size: 20px;
+            border: 2px solid;
+            border-color: darkorange;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button:hover {
+            background-color: goldenrod;
+        }
+
+        .button:active {
+            transform: translateY(4px);
+        }
+
+        .row:after {
+            clear: both;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 10px;
+            left: 12px;
+            color: white;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        @media screen and (max-width: 600px) {
+            .col-50 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Save Our Wildlife</h1>
+    </header>
+    <div id="navbar">
+        <a href="home.html">Home</a>
+        <a href="info.html">Info</a>
+        <a class="active" href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="container">
+        <h2>Donation</h2>
+        <div class="row">
+            <div class="col-50">
+                <div class="imagecontainer">
+                    <img src="https://www.unreservedmedia.com/wp-content/uploads/2020/07/Malayan-Tiger-at-Zoo_Shariff-Mohamad-17-1.jpg"
+                        alt="Malayan tiger">
+                    <button class="button">Donate</button>
+                    <div class="top-left">Donate to our<br>Malayan tigers</div>
+                </div>
+            </div>
+            <div class="col-50">
+                <div class="imagecontainer">
+                    <img src="https://th-thumbnailer.cdn-si-edu.com/2QR4Wr7Hx0C0GEEy2fdVMNr_9Wo=/1000x750/filters:no_upscale():focal(2560x1707:2561x1708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/53/d2/53d26bb7-205a-4cfa-b988-590a9edb8742/gettyimages-107246950.jpg"
+                        alt="Orangutan">
+                        <button class="button">Donate</button>
+                    <div class="top-left">Donate to our<br>Orangutans</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-50">
+                <div class="imagecontainer">
+                    <img src="https://ns.clubmed.com/esap/2020/362/img/blog/HawksbillTurtle.jpg" alt="Turtle">
+                    <button class="button">Donate</button>
+                    <div class="top-left">Donate to our<br>turtles</div>
+                </div>
+            </div>
+            <div class="col-50">
+                <div class="imagecontainer">
+                    <img src="https://cleanmalaysia.com/wp-content/uploads/2018/01/1200-tuskless-female-asian-elephant.jpg"
+                        alt="Elephant">
+                    <button class="button">Donate</button>
+                    <div class="top-left">Donate to our<br>Bornean elephants </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-50">
+                <div class="imagecontainer">
+                    <img src="https://globalforestcoalition.org/wp-content/uploads/2018/05/Group-photo-in-the-Mengkawago-community-forest.png"
+                        alt="Community">
+                    <button class="button">Donate</button>
+                    <div class="top-left">Donate to help<br>our community</div>
+                </div>
+            </div>
+            <div class="col-50">
+                <div class="imagecontainer">
+                    <img src="https://apemalaysia.com/wp-content/uploads/2020/06/IMG_5390-2.jpg" alt="Reforestation">
+                    <button class="button">Donate</button>
+                    <div class="top-left">Donate to our<br>Reforestation<br>Project</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="navbarjs.js"></script>
+</body>
+
+</html>

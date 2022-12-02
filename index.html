@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-size: 20px;
+            background-image: url("https://img.freepik.com/free-vector/watercolor-nature-background-with-leaves_52683-59449.jpg?w=2000");
+            background-repeat: no-repeat;
+            height: 100vp;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: rgb(190, 224, 198);
+            padding: 150px 125px;
+            border-radius: 5px;
+            border: 5px solid white;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        label {
+            padding: 12px 12px 12px;
+            font-size: 25px;
+        }
+
+        input[type=submit] {
+            padding: 12px 20px;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        .row:after {
+            clear: both;
+        }
+    </style>
+    <script src="loginvalidate.js"></script>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <div class="container">
+        <form action="home.html" name="login" onsubmit="return validateLogin()">
+            <div class="row">
+                <label for="username">Username:</label>
+            </div>
+            <div class="row">
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="row">
+                <label for="pwd">Password:</label>
+            </div>
+            <div class="row">
+                <input type="password" id="pwd" name="pwd">
+            </div>
+            <div class="row">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <a href="sign up.html">Don't have an account? Click here to create one</a>
+    </div>
+</body>
+
+</html>

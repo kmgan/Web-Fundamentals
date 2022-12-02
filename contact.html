@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="project.css">
+    <style>
+        input[type=text],
+        input[type=email],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        label {
+            padding: 12px 12px 12px;
+            font-size: 25px;
+        }
+
+        input[type=submit] {
+            padding: 12px 20px;
+            font-size: 20px;
+            float: right;
+            margin-top: 10px;
+        }
+
+        .container {
+            background-color: rgb(190, 224, 198);
+            padding: 20px;
+            border-radius: 5px;
+            border: 5px solid white;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 8px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 8px;
+        }
+
+        .row:after {
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .col-25,
+            .col-75 {
+                width: 100%;
+            }
+        }
+    </style>
+    <script src="contactValidate.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Save Our Wildlife</h1>
+    </header>
+    <div id="navbar">
+        <a href="home.html">Home</a>
+        <a href="info.html">Info</a>
+        <a href="donate.html">Donate</a>
+        <a class="active" href="contact.html">Contact</a>
+    </div>
+    <div class="container">
+        <h2>Contact us</h2>
+        <form name="contactUs" onsubmit="return validateContact()">
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="example@example.com">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="message">Message:</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="message" name="message" placeholder="Write a message..."
+                        style="height:300px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="assignmentscript.js"></script>
+</body>
+
+</html>
